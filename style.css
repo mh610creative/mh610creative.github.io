@@ -1,10 +1,10 @@
 *{
-  box-sizing: border-box;
+    box-sizing: border-box;
 
 }
 html,body{
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -13,17 +13,17 @@ header{
 }
 
 main {
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-border: 1px solid orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid orange;
 
 }
 
 .formBox, .containerBox {
-width: 25%;
-border: 1px solid red;
-height: 300px;
+    width: 25%;
+    border: 1px solid red;
+    height: 300px;
 }
 
 button{
@@ -32,4 +32,9 @@ button{
 
 footer{
     border: 1px solid blue;
+}
+
+form #male {
+    display: inline;
+
 }

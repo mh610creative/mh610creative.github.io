@@ -14,15 +14,19 @@
 <main>
 <div class="formBox">
     <h3>Main Area for Form</h3>
-    <form>
+    <form id="userinput">
     <label for="fname">First Name:</label><br>
     <input type="text" id="fname" name="fname"><br>
-    <label for="bday">Birthday(month/day)</label><br>
+    <label for="bday">Birthday (month/day)</label><br>
     <input type="text" id="bday" name="bday"><br>  
-    <label for="fname">Gender</label><br>
-    <input type="text" id="fname" name="fname"><br>    
-    </form>
-    <button name="formFill" type="submit" value="formData">SUBMIT</button>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="nonbinary" name="gender" value="nonbinary">
+    <label for="nonbinary">Non-Binary</label>   
+    <button name="submit" id="submit" type="submit" value="formData">SUBMIT</button>
+</form>
     </div>
     <div class="containerBox">
         <h3>Extra section</h3>
