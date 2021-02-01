@@ -6,3 +6,30 @@ html,body{
 margin: 0;
 padding: 0;
 }
+
+header{
+    text-align: center;
+    border: 1px solid green;
+}
+
+main {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+border: 1px solid orange;
+
+}
+
+.formBox, .containerBox {
+width: 25%;
+border: 1px solid red;
+height: 300px;
+}
+
+button{
+    display: inline;
+}
+
+footer{
+    border: 1px solid blue;
+}
