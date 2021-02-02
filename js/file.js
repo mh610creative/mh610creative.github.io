@@ -59,11 +59,62 @@ if (name.value === '' || bday.value === ''){
 userInput.addEventListener('submit', (e) =>{
     let delay= setInterval((console.log('submit clicked'), 5000));
     clearInterval(delay);
-    checkData();
+    if(checkData() === false){
     e.preventDefault();
+    }
 })
 
+
 // fetch request goes inside the preventdefault callback function for user input
+// const url = 'http://api.giphy.com/v1/gifs/translate/?api_key=MLFmfU4e8qjHa3zT7ojvbq4I4B1NMYqN';
+// fetch(url, {
+//     method: 'GET',
+//     'api_key': 'MLFmfU4e8qjHa3zT7ojvbq4I4B1NMYqN',
+//     'username': 'mh610creative'
+// });
+
+// })
+// .then(res => {
+//     if (res.ok) {
+//         console.log('SUCCESS')
+// } else {
+//     console.log("Not successful")
+// }
+// res.json()
+// })
+// .then(data => console.log(data))
+// .catch(error => console.log('ERROR'))
+fetch('http://api.giphy.com/v1/gifs/translate?api_key=MLFmfU4e8qjHa3zT7ojvbq4I4B1NMYqN&s=morgan&s=august&s=male&weirdness=5&limit=4')
+  .then(function(data) {
+    return data.json();
+  })
+  .then(function(json) {
+    var posts = json;
+    console.log(posts);
+});
+
+// THE ABOVE WORKS, but i have to change the fetch url parameter for search "&s=" for each field of the form, dont know if the translate feature will return 4 at once so does that mean looping fetch requests?
+// .then(res => {
+//     if (res.ok) {
+//         console.log('SUCCESS')
+// } else {
+//     console.log("Not successful")
+// }
+// res.json()
+// })
+// .then(data => console.log(data))
+// .catch(error => console.log('ERROR'))
+
+// request.get('http://api.giphy.com/v1/gifs/translate' , { 'api_key': 'MLFmfU4e8qjHa3zT7ojvbq4I4B1NMYqN', 'user': 'mh610creative'});
+
+
+// let giphyKey = 'MLFmfU4e8qjHa3zT7ojvbq4I4B1NMYqN';
+// let url = 'http://api.giphy.com/v1/gifs/translate'
+
+
+// fetch data, get it, parse it to create elements in JS to manipulate DOM
+
+
 // Form disappears
 
 // DOM Manipulation - replace HTML code with JS or delete HTML and insert JS
@@ -86,4 +137,3 @@ userInput.addEventListener('submit', (e) =>{
 
 
 // from mario, function for API call is only invoked on-click OR be stored only locally inside the event listener
-
