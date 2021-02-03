@@ -8,7 +8,7 @@ let male = document.querySelector('#male');
 let female = document.querySelector('#female');
 let nonbinary = document.querySelector('#nonbinary');
 // let form = Array.from(document.querySelectorAll('#userinput input')).reduce((acc, input) => ({...acc,[input.id]: input.value}), {});
-// let form = document.querySelector('form');
+let form = document.getElementById('userInput');
 
 // User enters Form Data, types in form
 
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
        }
 });
 
-let submitUrl = '    ';
+// let submitUrl = '    ';
 userInput.addEventListener('submit', (e) => {
      e.preventDefault();
      data.name = name.value;
@@ -122,20 +122,41 @@ userInput.addEventListener('submit', (e) => {
       return data.json();
     })
     .then(function(json) {
-      let posts = json;
+      let posts = json.data;
       console.log(posts);
-  });
-}
-// show results is function to call inside 
-
-function showResults(){
-
-
-
-
-
+      document.querySelector('.formBox').removeChild(form)
+      showResults(posts);
+    })
     
 }
+
+const showResults = (input) => {
+    for(let i=0; i<3; i++){
+        let gif = document.createElement('img');
+        document.querySelector('.formBox').appendChild(gif);
+        gif.setAttribute('class', 'gif');
+        gif.setAttribute('src', input[i].images.original.url);
+    }
+    }
+
+// showResults(cloneJson);
+// const showResults = () => {
+//     for(let i=0; i<3; i++){
+//         let gif = document.createElement('img');
+//         gif.setAttribute('class', 'gif');
+//         gif.setAttribute('src', posts[i].url);
+//     }
+//     }
+// show results is function to call inside, the scoping is issue again, tacking the results into getData function is raising the security protocol
+
+// function showResults(input) {
+// for(let i=0; i<3; i++){
+//     let gif = document.createElement('img');
+//     gif.setAttribute('class', 'gif');
+//     gif.setAttribute('src', posts[i].url);
+// }
+// }
+
 
 // userInput.addEventListener('submit', function (e) {
 //     e.preventDefault();
