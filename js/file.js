@@ -8,7 +8,7 @@ let male = document.querySelector('#male');
 let female = document.querySelector('#female');
 let nonbinary = document.querySelector('#nonbinary');
 // let form = Array.from(document.querySelectorAll('#userinput input')).reduce((acc, input) => ({...acc,[input.id]: input.value}), {});
-let form = document.querySelector('form');
+// let form = document.querySelector('form');
 
 // User enters Form Data, types in form
 
@@ -68,20 +68,85 @@ userInput.addEventListener('submit', (e) =>{
 
 
 // convert form into string
+// let finalData = ''; 
+// userInput.addEventListener('submit', (e) => {
+//     // let selectedValue;
+//     e.preventDefault();
+//     // console.log (typeof name.value);
+//     // console.log(typeof bday.value);
+//     // const rbs = document.querySelectorAll("input[name='gender']");
+//     // for(const rb of rbs){
+//     //         if(rb.checked){
+//     //             selectedValue = rb.value;
+//     //             break;
+//     //         }
+//     //     }
+//     // alert(selectedValue);
+//     // console.log(typeof e.target.gender.value);
+//     let output += name.value.concat("-" + bday.value + "-" + e.target.gender.value);
+//     finalData.push(output);
+// });
+// console.log(finalData)
 
-userInput.addEventListener('submit', (e) => {
-    let selectedValue;
-    const rbs = document.querySelectorAll("input[name='gender']");
-    for(const rb of rbs){
-            if(rb.checked){
-                selectedValue = rb.value;
-                break;
-            }
-        }
-    alert(selectedValue);
+
+let data = new FormData();
+document.addEventListener('DOMContentLoaded', () => {
+       data.append('name' , '  ');
+       data.append('birthday' , '   ');
+       data.append('gender', '   ');
+       console.log(Array.from(data));
+       for (let obj of data){
+           console.log(obj)
+       }
 });
 
+let submitUrl = '    ';
+userInput.addEventListener('submit', (e) => {
+     e.preventDefault();
+     data.name = name.value;
+     data.birthday = bday.value;
+     data.gender = e.target.gender.value;
+     console.log(data); 
+     let url = 'http://api.giphy.com/v1/gifs/search?api_key=MLFmfU4e8qjHa3zT7ojvbq4I4B1NMYqN&limit=3&q=';
+     url = url.concat(data.name + "-" + data.birthday + "-" + data.gender);
+     console.log(url);
+     getData(url);
+    });
 
+// brock said i could make all of the above parameter value updates for data into another function, look into after completing alpha functionality if 
+// time permits
+
+    function getData(url) {
+    fetch(url)
+    .then(function(data) {
+      return data.json();
+    })
+    .then(function(json) {
+      let posts = json;
+      console.log(posts);
+  });
+}
+// show results is function to call inside 
+
+function showResults(){
+
+
+
+
+
+    
+}
+
+// userInput.addEventListener('submit', function (e) {
+//     e.preventDefault();
+//     const formData = new FormData(this);   
+//     const data = {}
+//     Array.from(formData.entries()).forEach((item)=>{
+//       data[item[0]] = item[1]
+//     })
+    
+//     console.log(data)
+//   })
 
 
 
@@ -168,14 +233,8 @@ userInput.addEventListener('submit', (e) => {
 // })
 // .then(data => console.log(data))
 // .catch(error => console.log('ERROR'))
-fetch('http://api.giphy.com/v1/gifs/search?api_key=MLFmfU4e8qjHa3zT7ojvbq4I4B1NMYqN&limit=3&q=jane-february-nonbinary')
-  .then(function(data) {
-    return data.json();
-  })
-  .then(function(json) {
-    let posts = json;
-    console.log(posts);
-});
+
+
 
 
 
