@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
        data.append('name' , '  ');
        data.append('birthday' , '   ');
        data.append('gender', '   ');
-    //    console.log(Array.from(data));
+       Array.from(data); 
+    // console.log(Array.from(data));
        for (let obj of data){
            console.log(obj)
        }

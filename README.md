@@ -27,7 +27,7 @@ Please visit INSERT WEBSITE LINK HERE to access the platform. -->
  <!--WIREFRAMES?  -->
 
 #### HURDLES/PROBLEMS
-FIXING DEPLOYMENT
+
 
 
 
