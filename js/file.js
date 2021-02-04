@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
        data.append('birthday' , '   ');
        data.append('gender', '   ');
        Array.from(data); 
-    console.log(Array.from(data));
-       for (let obj of data){
-           console.log(obj)
-       }
+    // console.log(Array.from(data));
+    //    for (let obj of data){
+    //        console.log(obj)
+    //    }
 });
 
 
@@ -26,10 +26,10 @@ userInput.addEventListener('submit', (e) => {
      data.name = name.value;
      data.birthday = bday.value;
      data.gender = e.target.gender.value;
-     console.log(data); 
+    //  console.log(data); 
      let url = 'http://api.giphy.com/v1/gifs/search?api_key=MLFmfU4e8qjHa3zT7ojvbq4I4B1NMYqN&limit=3&q=';
      url = url.concat(data.name + "-" + data.birthday + "-" + data.gender);
-     console.log(url);
+    //  console.log(url);
      getData(url);
     });
 
@@ -42,7 +42,7 @@ userInput.addEventListener('submit', (e) => {
     })
     .then(function(json) {
       let posts = json.data;
-      console.log(posts);
+    //   console.log(posts);
       document.querySelector('.formBox').removeChild(form);
       document.querySelector('h3').innerText = 'BINGO! GIF DNA!';
       showResults(posts);
