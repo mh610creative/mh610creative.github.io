@@ -14,9 +14,9 @@
 * IMGUR WEB HOSTING
 <!-- VS CODE, COMMAND LINE, GITHUB, WHATS THE LIMIT ON TECH USED?? -->
 
-### INSTALLATION INSTRUCTIONS
+<!-- ### INSTALLATION INSTRUCTIONS
 
-Please visit INSERT WEBSITE LINK HERE to access the platform.
+Please visit INSERT WEBSITE LINK HERE to access the platform. -->
 
 ### USER STORIES
 
@@ -26,6 +26,7 @@ Please visit INSERT WEBSITE LINK HERE to access the platform.
 
  <!--WIREFRAMES?  -->
 
+#### HURDLES/PROBLEMS
 
 
 
