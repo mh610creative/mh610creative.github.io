@@ -14,14 +14,14 @@ padding: 40px 40px;
 display: flex;
 flex-direction: column;
 align-items: center;
-border: 5px solid green;
+/* border: 5px solid green; */
 }
 
 .formBox {
 display: flex;
 height: auto;
 width: auto;
-border: 5px solid red;
+/* border: 5px solid red; */
 flex-direction: row;
 /* text-size: 2px; */
 /* flex-basis: 10%; */
@@ -46,13 +46,13 @@ h2 {
     display: flex;
     flex: 1;
     order: 2;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
 }
 .containerBox1{
     display: flex;
     flex: 1;
     order: 3;
-    border: 5px solid orange;
+    /* border: 5px solid orange; */
 }
 
 #submit{
@@ -61,20 +61,16 @@ h2 {
 }
 
 header{
-    border: 5px solid purple;
+    /* border: 5px solid purple; */
     text-align: center;
 
 }
 
 footer{
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
     text-align: center;
 }
 
-/* img {
-    height: 50%;
-    width: 50%;
-} */
 
 
 
@@ -92,68 +88,3 @@ footer{
 
 
 
-
-
-
-
-/* *{
-    box-sizing: border-box;
-
-}
-html,body{
-    margin: 0;
-    padding: 0;
-}
-
-header{
-    text-align: center;
-    border: 1px solid green;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 1px solid orange;
-
-}
-
-.formBox {
-        width: 90%;
-        border: 1px solid red;
-        height: 300px;
-        
-    }
-
-
-
-.containerBox {
-    width: 10%;
-    border: 1px solid purple;
-    height: 300px;
-}
-
-button{
-    display: inline;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-
-footer{
-    border: 1px solid blue;
-}
-
-h3, form {
-    margin-left: 45%;
-
-}
-
-form {
-    
-
-}
-
-.gif{
-margin-left: 50px;
-
-} */

@@ -1,2 +1,9 @@
-# unit_1_project_1
-JS/HTML/CSS API Project 
+# GIF DNA TRANSLATOR
+
+
+## OVERVIEW
+[Imgur Before](https://i.imgur.com/B74UHaL.png)
+[Imgur After](https://i.imgur.com/SBOcunD.png)
+
+## LIST OF TECHNOLOGIES USED
+
