@@ -33,37 +33,38 @@ nonbinary.addEventListener('click', (e) =>{
     clearInterval(delay);
 })
 
-//  check for above, form validation
+//  check for above, form validation, used required tag in html
 
-function checkData() {
-    // submit event listener
-if (name.value === '' || bday.value === ''){
-    console.log('form incomplete')
-    return false
-} else if(male.click === false){
-    console.log('form incomplete')
-    return false
-} else if(female.click === false){
-    console.log('form incomplete')
-    return false
-} else if(nonbinary.click === false){
-    console.log('form incomplete')
-    return false
-} else {
-    console.log('form complete')
-    return true
-}
-};
+// function checkData() {
+//     // submit event listener
+// if (name.value === '' || bday.value === ''){
+//     console.log('form incomplete')
+//     return false
+// } else if(male.click === false){
+//     console.log('form incomplete')
+//     return false
+// } else if(female.click === false){
+//     console.log('form incomplete')
+//     return false
+// } else if(nonbinary.click === false){
+//     console.log('form incomplete')
+//     return false
+// } else {
+//     console.log('form complete')
+//     return true
+// }
+// };
 
 // User clicks Submit button
 
-userInput.addEventListener('submit', (e) =>{
-    let delay= setInterval((console.log('submit clicked'), 5000));
-    clearInterval(delay);
-    if(checkData() === false){
-    e.preventDefault();
-    }
-})
+// userInput.addEventListener('submit', (e) =>{
+//     let delay= setInterval((console.log('submit clicked'), 5000));
+//     clearInterval(delay);
+//     checkData();
+//     if(checkData() === false){
+//     e.preventDefault();
+//     }
+// })
 
 
 
@@ -124,8 +125,10 @@ userInput.addEventListener('submit', (e) => {
     .then(function(json) {
       let posts = json.data;
       console.log(posts);
-      document.querySelector('.formBox').removeChild(form)
+      document.querySelector('.formBox').removeChild(form);
+      document.querySelector('h3').innerText = 'BINGO! GIF DNA!';
       showResults(posts);
+
     })
     
 }
@@ -135,9 +138,52 @@ const showResults = (input) => {
         let gif = document.createElement('img');
         document.querySelector('.formBox').appendChild(gif);
         gif.setAttribute('class', 'gif');
-        gif.setAttribute('src', input[i].images.original.url);
+        gif.setAttribute('src', input[i].images.fixed_width.url);
     }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // showResults(cloneJson);
 // const showResults = () => {

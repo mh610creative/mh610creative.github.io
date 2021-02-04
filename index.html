@@ -4,56 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
     <script defer src="js/file.js"></script>
     <title>GIF DNA GENERATOR</title>
 </head>
 <body>
 <header>
     <h2>GIF DNA GENERATOR</h2>
+    <a href="https://imgur.com/uHrlRQS"><img src="https://i.imgur.com/uHrlRQSm.png" title="source: imgur.com" /></a>
 </header> 
 <main>
+    <h3>A DNA strand, like me, is the blueprint for buildin' a living thing.<br>
+    - Mr. DNA</h3>   
+     
 <div class="formBox">
-    <h3>Main Area for Form</h3>
     
     <form id="userInput">
     <label for="fname">First Name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
+    <input type="text" id="fname" name="fname" required><br>
     
-    <label for="bday">Birthday (month/day)</label><br>
-    <input type="text" id="bday" name="bday"><br>  
-    
-    <!--<div class="dropDown1">
-      <label for="bday">Birthday</label>
-      <select id="bday" name="bday">
-        <option>Jan</option>
-        <option>Feb</option>
-        <option>March</option>
-        <option>April</option>
-        <option>May</option>
-        <option>June</option>
-        <option>July</option>
-        <option>Aug</option>
-        <option>Sept</option>
-        <option>Oct</option>
-        <option>Nov</option>
-        <option>Dec</option>
-      </select>
-    </div>  -->
-    
-    
-    
-    <input type="radio" id="male" name="gender" value="male">
+    <label for="bday">Birth Month:</label><br>
+    <input type="text" id="bday" name="bday" required><br>  
+        
+    <input type="radio" id="male" name="gender" value="male" required>
     <label for="male">Male</label><br>
+
     <input type="radio" id="female" name="gender" value="female">
     <label for="female">Female</label><br>
+
     <input type="radio" id="nonbinary" name="gender" value="nonbinary">
-    <label for="nonbinary">Non-Binary</label>   
-    <button name="submit" id="submit" type="submit" value="formData">SUBMIT</button>
+    <label for="nonbinary">Non-Binary</label><br>
+
+    <button name="submit" id="submit" type="submit" value="formData">GIF ME</button>
 </form>
     </div>
-    <div class="containerBox">
+    <!-- <div class="containerBox1">
         <h3>Extra section</h3>
         </div>
+        <div class="containerBox2">
+            <h3>Extra section</h3>
+            </div> -->
 </main>        
 <footer>
     <h3>Bottom for bio, links</h3>

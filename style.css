@@ -1,4 +1,102 @@
 *{
+    box-sizing: border-box; 
+    font-family: 'Yusei Magic', sans-serif;
+    background-color: rgb(1,26,59);
+    color: white;
+} 
+
+
+main {
+max-width: 1300px;
+margin: 20px 5px 0 auto;
+line-height: 1.65;
+padding: 40px 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 5px solid green;
+}
+
+.formBox {
+display: flex;
+height: auto;
+width: auto;
+border: 5px solid red;
+flex-direction: row;
+/* text-size: 2px; */
+/* flex-basis: 10%; */
+/* flex-wrap: wrap;
+justify-content: center;
+align-items: baseline; */
+/*align items is for across axis not MAIN access */
+/* justify-content: center; */
+/* flex-direction: column; fixed h3 problem but blows up gifs too large*/ 
+/* flex-wrap: wrap-reverse; */
+}
+
+/* form {
+    margin: auto;
+} */
+
+h2 {
+    font-size: 40px;
+}
+
+.containerBox2{
+    display: flex;
+    flex: 1;
+    order: 2;
+    border: 5px solid blue;
+}
+.containerBox1{
+    display: flex;
+    flex: 1;
+    order: 3;
+    border: 5px solid orange;
+}
+
+#submit{
+    margin-top: 5px;
+    margin-left: 39px;
+}
+
+header{
+    border: 5px solid purple;
+    text-align: center;
+
+}
+
+footer{
+    border: 5px solid yellow;
+    text-align: center;
+}
+
+/* img {
+    height: 50%;
+    width: 50%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
     box-sizing: border-box;
 
 }
@@ -15,26 +113,47 @@ header{
 main {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     border: 1px solid orange;
 
 }
 
-.formBox, .containerBox {
-    width: 25%;
-    border: 1px solid red;
+.formBox {
+        width: 90%;
+        border: 1px solid red;
+        height: 300px;
+        
+    }
+
+
+
+.containerBox {
+    width: 10%;
+    border: 1px solid purple;
     height: 300px;
 }
 
 button{
     display: inline;
+    margin-top: 20px;
+    margin-left: 40px;
 }
 
 footer{
     border: 1px solid blue;
 }
 
-form #male {
-    display: inline;
+h3, form {
+    margin-left: 45%;
 
 }
+
+form {
+    
+
+}
+
+.gif{
+margin-left: 50px;
+
+} */
