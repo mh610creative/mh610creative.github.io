@@ -1,4 +1,3 @@
-
 let name = document.querySelector('#fname');
 let bday = document.querySelector('#bday');
 let male = document.querySelector('#male');
@@ -27,7 +26,7 @@ userInput.addEventListener('submit', (e) => {
      data.birthday = bday.value;
      data.gender = e.target.gender.value;
     //  console.log(data); 
-     let url = 'http://api.giphy.com/v1/gifs/search?api_key=MLFmfU4e8qjHa3zT7ojvbq4I4B1NMYqN&limit=3&q=';
+     let url = 'https://api.giphy.com/v1/gifs/search?api_key=MLFmfU4e8qjHa3zT7ojvbq4I4B1NMYqN&limit=3&q=';
      url = url.concat(data.name + "-" + data.birthday + "-" + data.gender);
     //  console.log(url);
      getData(url);
