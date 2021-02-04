@@ -59,7 +59,7 @@ const showResults = (input) => {
     }
     }
 
-
+// container of form box div with responsive, form box div gets flex direction column, all the div would go vertical 
 
 
 

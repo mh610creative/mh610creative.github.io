@@ -10,13 +10,8 @@
 * CSS
 * JS
 * AJAX
-* GIPHY API
+* GIPHY API 
 * IMGUR WEB HOSTING
-<!-- VS CODE, COMMAND LINE, GITHUB, WHATS THE LIMIT ON TECH USED?? -->
-
-<!-- ### INSTALLATION INSTRUCTIONS
-
-Please visit INSERT WEBSITE LINK HERE to access the platform. -->
 
 ### USER STORIES
 
@@ -24,7 +19,7 @@ Please visit INSERT WEBSITE LINK HERE to access the platform. -->
 
 >Almost anything I can’t post to social media or text to friends is irrelevant. It would be way better if I could share my DNA in a catchy way. If I could text my friends my DNA in GIFs for instance, they would tell their friends, and then, everyone would want to use it. - Courtney
 
- <!--WIREFRAMES?  -->
+ <!--WIREFRAMES?  INCLUDE ORIGINAL WIREFRAME, sentence or two regarding changes-->
 
 #### HURDLES/PROBLEMS
 
