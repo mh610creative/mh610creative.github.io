@@ -3,12 +3,13 @@
     font-family: 'Yusei Magic', sans-serif;
     background-color: rgb(1,26,59);
     color: white;
+    
 } 
 
 
 main {
 max-width: 1300px;
-margin: 20px 5px 0 auto;
+margin: 0 auto;
 line-height: 1.65;
 padding: 40px 40px;
 display: flex;
